@@ -89,7 +89,7 @@ app.delete("/movies/:id", async (req, res) => {
 
     await prisma.movie.delete({ where: { id } });
   } catch (error) {
-    return res.status(500).send({ message: "Não foi possivel remover o filme" });
+    return res.status(500).send({ message: "Não foi possível remover o filme" });
   }
 
   res.status(200).send();
