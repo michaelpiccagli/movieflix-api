@@ -2,6 +2,8 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es2020",
+    "rootDir": "./",
+    "outDir": "./dist",
 
     "esModuleInterop": true,
     "verbatimModuleSyntax": false,
@@ -9,5 +11,7 @@
     "strict": true,
     "skipLibCheck": true,
     "resolveJsonModule": true
-  }
+  },
+  "include": ["src", "swagger.json"],
+  "exclude": ["node_modules"]
 }
